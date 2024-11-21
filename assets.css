@@ -1,0 +1,661 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+}
+
+/* Header and Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #e8f5e9;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: #2e7d32;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #388e3c;
+}
+
+.hero-image {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+/* Features Section */
+#features {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature {
+  flex: 1;
+  max-width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  margin: 15px 0 10px;
+  color: #4caf50;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 10px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+  /*mindfulness.excercise */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  padding: 50px 70px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 15px;
+  transition: background 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 20px 30px;
+  background: url('images/Image3.jpg') no-repeat center/cover;
+  color: #fff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+#hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+/* Exercise List */
+#exercise-list {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#exercise-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a6fa5;
+}
+
+.exercise-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.exercise-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.exercise-table thead {
+  background-color: #4a6fa5;
+  color: #fff;
+}
+
+.exercise-table th,
+.exercise-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.exercise-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Meditation Timer */
+#meditation-timer {
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#meditation-timer h2 {
+  color: #4a6fa5;
+  margin-bottom: 15px;
+}
+
+.center-img {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  display: block;
+}
+
+.button {
+  background: #4a6fa5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #365f91;
+}
+
+.timer-display {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a6fa5;
+}
+
+/* Resources Section */
+#resources {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#resources h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4a6fa5;
+}
+
+.resource-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.resource-list li {
+  margin: 10px 0;
+}
+
+.resource-list a {
+  color: #4a6fa5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.resource-list a:hover {
+  color: #365f91;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background: #4a6fa5;
+  color: #fff;
+  font-size: 0.9rem;
+}
+    /*mood-tracker */
+ /* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f9f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #81b29a;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-list li a {
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  background-color: #f4f1de;
+  color: #81b29a;
+}
+
+/* Section Titles */
+h2 {
+  text-align: center;
+  color: #3d405b;
+  margin-bottom: 20px;
+}
+
+/* Mood Form Styles */
+#mood-form {
+  background-color: #e0fbfc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mood-log-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3d405b;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.btn {
+  background-color: #81b29a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3d405b;
+}
+
+/* Table Styles */
+#mood-log-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#mood-log-table th,
+#mood-log-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#mood-log-table th {
+  background-color: #81b29a;
+  color: white;
+  font-weight: bold;
+}
+
+#mood-log-table td {
+  background-color: #f4f9f9;
+}
+
+/* Mood Graph Section */
+#mood-graph {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #3d405b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+footer a {
+  color: #81b29a;
+}
+
+footer a:hover {
+  color: #f4f1de;
+}
+  /* about */
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f7f9fc;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  padding: 10px 20px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a.active {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section.bg-light {
+  background-color: #e8f5e9;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Mission Section */
+#mission img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* About Us Section */
+#about-us {
+  padding: 40px 20px;
+}
+
+/* Team Section */
+#team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+  

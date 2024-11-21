@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Mindfulness & Mood Tracker</a>
+        <img src="images/Image9.avif" alt="Mindfulness & Mood Tracker Logo" class="logo-img">
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mood-tracker.html" class="active">Mood-tracker</a></li>
+        <li><a href="mindfulness-exercise.html">Mindfulness Exercise</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header
+  <main>
+    <section id="mood-form">
+      <div class="container">
+        <h2>Log Your Mood</h2>
+        <form id="mood-log-form">
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mood">Mood:</label>
+            <select id="mood" name="mood" required>
+              <option value="" disabled selected>Select your mood</option>
+              <option value="happy">😊 Happy</option>
+              <option value="neutral">😐 Neutral</option>
+              <option value="sad">😔 Sad</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notes (Optional):</label>
+            <textarea id="notes" name="notes" placeholder="Add any thoughts..."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Log Mood</button>
+        </form>
+      </div>
+    </section>
+    <section id="mood-log-table">
+      <div class="container">
+        <h2>Logged Moods</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Mood</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="mood-entries">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="mood-graph">
+      <div class="container">
+        <h2>Your Mood Trends</h2>
+        <img src="images/Image9.1.jpg" alt="Mood trends visualization" class="responsive-img">
+        <canvas id="moodChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Mindfulness & Mood Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets.js"></script>
+</body>
+</html>
